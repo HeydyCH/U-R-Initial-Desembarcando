@@ -5,6 +5,8 @@
 # Estado de salud de un conjunto de-datos: https://librovivodecienciadedatos.ai/analisis-exploratorio-de-datos.html#estado-de-salud-de-un-conjunto-de-datos
 # Introduction to readr (pertenece al tidyverse, y tiene la función read_delim entre otras):  https://cran.r-project.org/web/packages/readr/vignettes/readr.html
 
+
+
 ##########################################
 ## Ejercicios!
 ##########################################
@@ -14,36 +16,34 @@
 
 ## 1 - Cargar el set de datos "data/HollywoodMovies.csv" (ojo con el separador!). 
 
-
 ## 2 - Cuantos registros y columnas tiene?
-
-
 
 ## 3 - Imprimir una variable Budget, y luego el registro numero 10
 
-## --- ---  ---  Resolucion
+##########################################
+## Resolucion!
+##########################################
 
-## 1
+## ---------------------------  1
+
 d_wine=read_delim("data/HollywoodMovies.csv", delim = ",")
 
-## 2
+
+## ---------------------------  2
+
 ## REGISTROS
 nrow(d_wine)
-
 
 ## COLUMNAS
 ncol(d_wine)
 
 
-## 3
+## ---------------------------  3
 
 glimpse(d_wine)
-
 d_wine
 
-
-## los 10 1ros elementos de una columna
 d_wine["Budget"]
-
+## los 10 1ros elementos de una columna
 d_wine[10,"Budget"]
 
