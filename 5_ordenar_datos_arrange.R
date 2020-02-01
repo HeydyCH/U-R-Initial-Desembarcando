@@ -80,4 +80,21 @@ d10=select_if(heart_disease, is.factor)
 
 
 
+################################################
+### Función `select_if`
+################################################
+df_status(heart_disease)
+
+
+#Convirtiendo en charter
+heart_disease$gender=as.character(heart_disease$gender)
+
+df_status(select_if(heart_disease, is.numeric))
+
+df_status(select_if(heart_disease, is.factor))
+
+df_status(select_if(heart_disease, is.character))
+
+
+
 
